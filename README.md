@@ -1,3 +1,38 @@
+# Architecture:
+src/
+ ├─ app/               # Точка входа, роутинг, глобальные стили, провайдеры
+ │   ├─ providers/     # react-query, redux-toolkit, i18n, router
+ │   ├─ index.tsx
+ │   └─ App.tsx
+ │
+ ├─ processes/         # Глобальные процессы (например, session)
+ │   └─ session/
+ │
+ ├─ pages/             # Страницы приложения
+ │   ├─ Home/
+ │   ├─ ApiDetails/
+ │   └─ Settings/
+ │
+ ├─ features/          # Фичи = юзерские действия
+ │   ├─ search-api/    # поиск API
+ │   ├─ select-method/ # выбор метода
+ │   └─ auth/          # логин/логаут
+ │
+ ├─ entities/          # Сущности доменной области
+ │   ├─ Api/
+ │   ├─ Method/
+ │   └─ User/
+ │
+ ├─ shared/            # Общие блоки
+ │   ├─ ui/            # кнопки, инпуты, таблицы
+ │   ├─ lib/           # axios/fetch, date-format
+ │   ├─ config/        # env, constants
+ │   ├─ api/           # базовый слой работы с api
+ │   └─ styles/        # глобальные css/vars
+ │
+ └─ index.tsx
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
