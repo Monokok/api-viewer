@@ -1,0 +1,29 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;  
+
+
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+  width: 100%;
+ 
+  background: white;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.header-auth{
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  /* font-weight: bolder; */
+}
+
+.header-auth a {
+  font-weight: bold;
+}
