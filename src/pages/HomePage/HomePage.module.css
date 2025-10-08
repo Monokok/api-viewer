@@ -1,0 +1,37 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* вместо margin */
+}
+.image-panel img {
+  flex: 1 1 40%; /* базовая ширина 40%, но можно ужать или расширить */
+  max-width: 40%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  flex-wrap: wrap;
+
+  .card-grid-header {
+  }
+}
