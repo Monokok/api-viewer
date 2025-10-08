@@ -19,28 +19,28 @@ export function HomePage() {
       </section>
       <section className={styles["card-grid"]}>
         <div className={styles["card-grid-header"]}>
-            <h2>Возможности и преимущества</h2>
-            <h3>Да, это всё про → API Viewer!</h3>
+            <a>Возможности и преимущества</a>
+            <a>Да, это всё про → API Viewer!</a>
         </div>
         <Card
           imageUrl={firstImage}
           buttonText="К Request-Конструктору"
           header="Создание запросов"
-          description="Основной инструмент для создания запросов - это Request-Конструктор. Надёжный, современный, лёгкий в освоении и использовании"
+          description="Основной инструмент для создания запросов - это Request-Конструктор. Надёжный, современный, лёгкий в освоении и использовании!"
           callback={foo}
         ></Card>
         <Card
           imageUrl={firstImage}
           buttonText="Создать новый запрос"
           header="Настройка параметров"
-          description="Каждый End-Point будет достигнут"
+          description="Каждый End-Point будет достигнут!"
           callback={foo}
         ></Card>
         <Card
           imageUrl={firstImage}
           buttonText="Создать учетную запись"
           header="История и результаты запросов"
-          description="Версионность требуется любому проекту, однако и некогда популярным API-запросам нужно вновь освежится в чьей-либо памяти - остается лишь подгрузить ранее отправленный"
+          description="Версионность требуется любому проекту, однако и некогда популярным API-запросам нужно вновь освежится в чьей-либо памяти - остается лишь подгрузить ранее отправленный!"
           callback={foo}
         ></Card>
       </section>
