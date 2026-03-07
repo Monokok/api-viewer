@@ -23,9 +23,10 @@
   display: block;
   object-fit: cover;
 }
-
+/* 
 .card-grid {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -45,4 +46,4 @@
     font-size: x-large;
     font-weight: bold;
   }
-}
+} */

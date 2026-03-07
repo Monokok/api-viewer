@@ -1,7 +1,7 @@
+import styles from './router.module.css'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { HomePage } from "../../pages/HomePage/HomePage";
 import { ApiViewerPage } from "../../pages/ApiViewerPage/ApiViewerPage";
-import styles from './router.module.css'
 import {Footer} from '../../shared/ui/Footer/Footer'
 
 export function Router() {

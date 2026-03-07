@@ -1,0 +1,54 @@
+.card{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center; 
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  border-width: 3px;
+  gap: 2%;
+  padding: 2%;
+  box-shadow: 0 2px 4px rgba(34, 39, 172, 0.1);
+}
+
+.textBlock{
+  padding-right: 5%;
+  padding-left: 2%;
+  grid-template-rows: auto 1fr auto;
+  text-align: justify;
+}
+
+  /* .header{
+    align-self: start;
+  }
+  .buttonWrapper{
+    align-self: self-end;
+  } */
+
+.image{
+  max-width: 100%;
+  justify-self: center;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    grid-template-columns: 1fr; 
+    justify-items: center; /* центрируем все дочерние элементы по горизонтали */
+    text-align: center; /* центрируем текст */
+    gap: 15px; /* увеличиваем отступы для мобильных */
+  }
+  
+  .textBlock{
+    text-align: center; /* центрируем текст внутри блока */
+    justify-self: center; /* центрируем сам блок */
+    width: 100%; /* занимает всю ширину */
+  }
+  
+  .image {
+    display: none;
+  }
+  
+  /* Если есть другие элементы (кнопки, заголовки)
+  .buttonWrapper, .header {
+    justify-self: center;
+  } */
+}
